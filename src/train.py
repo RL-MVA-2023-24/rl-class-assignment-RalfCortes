@@ -3,7 +3,7 @@ from utils import ReplayBuffer
 from copy import deepcopy
 import torch
 import torch.nn as nn
-from tqdm import tqdm
+# from tqdm import tqdm
 import numpy as np
 from env_hiv import HIVPatient
 import pickle
@@ -36,7 +36,7 @@ class ProjectAgent:
 
     def load(self):
 
-        self.model = load("src/model_saved/model_sklearn_colab_20022024_11H25.joblib")
+        self.model = load("src/model_saved/model_sklearn_20022024_13H20_compressed.joblib")
 
     def greedy_action(self, Q, s, nb_actions):
         Qsa = []
